@@ -29,7 +29,15 @@ const UserSchema = new mongoose.Schema(
     },
     isNeuturedOrSpayed:{
         type:Boolean
-    }    
+    },    
+    followers: {
+        type: Array,
+        default: [],
+      },
+    followees: {
+        type: Array,
+        default: [],
+      }
 },
 { timestamps: true }
 
